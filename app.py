@@ -29,10 +29,10 @@ def preprocess(df):
     return df
 
 st.title("Customer Churn Predictor")
-st.markdown("### CSV upload karo — saare customers ka churn predict hoga!")
+st.markdown("### Upload CSV file to get churn prediction. ")
 st.markdown("---")
 
-uploaded_file = st.file_uploader("Customer CSV file upload karo", type=['csv'])
+uploaded_file = st.file_uploader("Upload the customer CSV file", type=['csv'])
 
 if uploaded_file is not None:
     df_input = pd.read_csv(uploaded_file)
